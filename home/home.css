@@ -1,0 +1,12 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    background-color: #26333D;
+
+    display: flex;
+    
+}
