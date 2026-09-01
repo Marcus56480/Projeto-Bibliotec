@@ -33,3 +33,60 @@ a {
     font-weight: 500;
 }
 
+/* CONTEÙDO PRINCIPAL */
+
+.banner-principal {
+    color: var(--branco);
+
+    height: 70vh;
+
+    background-image: url(../imgs/banner-principal-home.png);
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 120px;
+    
+}
+
+.banner-principal img {
+    align-self: flex-end;
+    width: 35%;
+}
+
+.texto-banner {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+
+    align-items: flex-start;
+}
+
+.texto-banner p {
+    font-size: 1.5em;
+    width: 50%;
+}
+
+.botao {
+    padding: 20px 50px;
+
+    border-radius: 10px;
+
+    background-color: var(--destaque);
+    color: var(--azul-escuro);
+
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.botao:hover {
+    background-color: #2ab2ab;
+    color: var(--branco);
+}
+
+
