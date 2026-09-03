@@ -14,7 +14,8 @@ a {
 
     padding: 0 120px;
 
-    height: 10vh; /* 10% da visualização vertical do dispositivo/navegador*/
+    height: 10vh;
+    /* 10% da visualização vertical do dispositivo/navegador*/
 }
 
 .navegacao {
@@ -48,7 +49,6 @@ a {
     justify-content: space-between;
 
     padding: 0 120px;
-    
 }
 
 .banner-principal img {
@@ -108,7 +108,7 @@ a {
     display: flex;
     width: 250px;
     height: 4px;
-    background-color: var(--cor-destaque);
+    background-color: var(--destaque);
 }
 
 /* Seção Benefícios */
@@ -142,11 +142,13 @@ a {
     align-items: center;
     justify-content: center;
 
-    padding: 80px 20px 50px; /* em cima -> direita e esquerda -> embaixo */
+    padding: 80px 20px 50px;
+    /* em cima -> direita e esquerda -> embaixo */
 
     border: 1px solid var(--azul-escuro);
     border-radius: 30px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25); /* x -> y -> blur(desfoque) -> cor com transparência */
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+    /* x -> y -> blur(desfoque) -> cor com transparência */
 
     text-align: center;
 
@@ -214,4 +216,97 @@ a {
     color: var(--branco);
 }
 
+/* SEÇÃO DE LIVROS */
 
+.livros-recomendados {
+    margin-top: 50px;
+}
+
+
+.livros img {
+    height: 300px;
+    width: 200px;
+}
+
+.acervo {
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+
+    gap: 3%;
+    justify-content: center;
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+.livros h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+
+.Autor {
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: var(--azul-escuro);
+    height: 50vh;
+
+
+
+    margin-top: 100px;
+    padding: 100px;
+}
+
+.infos-cima {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos img {
+    height: 100px;
+    width: 200px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infos-texto {
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
+
+    padding-top: 20px;
+}
+
+.infos-texto p {
+    color: var(--branco);
+}
+
+.infos-texto span {
+    color: var(--destaque);
+}
+
+.linha p {
+    color: var(--branco);
+}
+
+.linha {
+    display: flex;
+    width: 90%;
+    height: 1px;
+    background-color: var(--branco);
+    justify-content: space-between;
+    margin-top: 50px;
+}
