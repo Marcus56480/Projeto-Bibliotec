@@ -308,5 +308,14 @@ a {
     height: 1px;
     background-color: var(--branco);
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 70px;
+}
+
+.linha p,
+.linha nav, 
+.linha a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 200;
 }
