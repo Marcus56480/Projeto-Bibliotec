@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     padding: 0px;
     margin: 0px;
@@ -12,6 +11,7 @@
     --texto: #26333D;
     --branco: #FFFFFF;
     --destaque: #2FD6CB;
+    --fundos: #E9F0EF;
 }
 
 html {
@@ -22,4 +22,39 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--branco);
     color: var(--texto);
+}
+
+/* CABEÇALHO */
+a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.cabecalho {
+    background-color: var(--azul-escuro);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 120px;
+
+    height: 10vh;
+    /* 10% da visualização vertical do dispositivo/navegador*/
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.navegacao a {
+    text-transform: uppercase;
+
+    /* 1rem -> Equivale a 16px (padrão da raiz do HTML) */
+    /* em -> Pega o tamanho da tipografia do elemento pai */
+    font-size: 1em;
+    font-weight: 500;
 }
