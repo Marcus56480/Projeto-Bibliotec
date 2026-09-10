@@ -129,7 +129,7 @@
 }
 
 .beneficio-icone {
-    border: 4px solid var(--cor-destaque);
+    border: 4px solid var(--destaque);
     background-color: var(--branco);
 
     border-radius: 50%;
@@ -216,73 +216,79 @@
     font-weight: bold;
 }
 
-/* RODAPÉ */
+/* footer - feito pelos alunos */
 
-.rodape {
+footer{
     background-color: var(--azul-escuro);
-    height: 50vh;
-
-
-
-    margin-top: 100px;
-    padding: 100px;
+    color: var(--branco);
+    padding: 100px 120px 30px;
 }
 
-.infos-cima {
+.main {
     display: flex;
     justify-content: space-between;
 }
 
-.logos img {
-    height: 100px;
-    width: 200px;
-}
-
-.logos {
+.rodape-logos {
     display: flex;
     flex-direction: column;
+    gap: 130px;
+}
+
+.rodape-informacoes {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.nav-footer  {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer p {
+    color: var(--destaque);
+    margin-bottom: 20px;
+
+}
+.nav-footer a {
+    color: var(--branco);
+    margin-bottom: 10px;
+}
+
+.icones {
+    display: flex;
     gap: 20px;
 }
 
-.infos-texto {
-    margin: 0px 100px;
+footer span {
     display: flex;
-    flex-direction: column;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 50px;
-
-    padding-top: 20px;
-}
-
-.infos-texto p {
-    color: var(--branco);
-}
-
-.infos-texto span {
-    color: var(--destaque);
-}
-
-.linha p {
-    color: var(--branco);
-}
-
-.linha {
-    display: flex;
-    width: 90%;
+    margin: 50px 0;
+    background-color: white;
     height: 1px;
-    background-color: var(--branco);
-    justify-content: space-between;
-    margin-top: 70px;
+    width: 100%;
 }
 
-.linha p,
-.linha nav, 
-.linha a {
+.footer-inferior {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    font-weight: 200;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.rodape-informacoes p {
+    color: var(--destaque);
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+}
+
+.footer-inferior {
+    display: flex;
 }
