@@ -447,7 +447,7 @@ footer span {
     }
 
     /* *Elemento com duas classes não tem espaço  */
-    .navegacao .ativo {
+    .navegacao.ativo {
         display: flex;
     }
 
@@ -512,54 +512,48 @@ footer span {
 
     /* FOOTER */
 
+
+    footer {
+        padding: 50px 40px;
+    }
+
     footer .main {
-        display: flex;
         flex-direction: column;
 
-        padding-top: 10px;
-        padding-left: 20px;
-        padding-right: 5px;
+        gap: 100px;
     }
 
-    .main .rodape-logos {
+    .rodape-logos {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 30px;
     }
 
-    .main .rodape-logos img {
-        height: 40%;
-        width: 100%;
+    .rodape-logos img {
+        width: 40%;
+    }
 
-        overflow: auto;
-
-        margin-bottom: 100px;
+    .rodape-informacoes {
+        gap: 30px;
     }
 
     .rodape-informacoes p {
         font-size: 1.5em;
     }
 
-    .nav-footer a,
-    .footer-inferior {
+    .nav-footer a, .footer-inferior {
         font-size: 1.2em;
     }
 
-    .footer-inferior .footer {
-        display: flex;
-        flex-direction: column;
-
-        padding: 10px;
-    }
-
-    .footer-inferior .footer a {
-        display: flex;
-        justify-content: flex-end;
-
-        margin-bottom: -10%;
-    }
-
     footer span {
-        margin-bottom: 2%;
         margin: 50px 0 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: right;
     }
 }
 
