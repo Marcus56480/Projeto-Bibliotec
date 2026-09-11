@@ -110,17 +110,17 @@
     justify-content: center;
 
     padding: 80px 20px 50px;
-    /* em cima -> direita e esquerda -> embaixo */
+    /* *em cima -> direita e esquerda -> embaixo */
 
     border: 1px solid var(--azul-escuro);
     border-radius: 30px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
-    /* x -> y -> blur(desfoque) -> cor com transparência */
+    /* *x -> y -> blur(desfoque) -> cor com transparência */
 
     text-align: center;
 
-    /* Cria referência de posicionamento para o ícone, quando o ícone for posicionado, usa esse card como referência */
-    /* sem isso, o círculo poderia usar outro elemento da página como referência e sair passeando pelo layout. */
+    /* *Cria referência de posicionamento para o ícone, quando o ícone for posicionado, usa esse card como referência */
+    /* *sem isso, o círculo poderia usar outro elemento da página como referência e sair passeando pelo layout. */
     position: relative;
 }
 
@@ -137,21 +137,21 @@
     width: 30%;
     height: 30%;
 
-    /* Retira o ícone do fluxo normal, com o absolute ele pode ficar por cima do card */
+    /* *Retira o ícone do fluxo normal, com o absolute ele pode ficar por cima do card */
     position: absolute;
 
-    /* Move o elemento pra cima, o valor negativo faz ele sair parcialmente do card */
+    /* *Move o elemento pra cima, o valor negativo faz ele sair parcialmente do card */
     top: -15%;
 
-    /* Coloca o começo elemento em 50% da largura do card */
+    /* *Coloca o começo elemento em 50% da largura do card */
     left: 50%;
 
-    /* ajustamos o posicionamento do elemento, mas a borda esquerda do círculo fica no centro, não o círculo inteiro */
+    /* *ajustamos o posicionamento do elemento, mas a borda esquerda do círculo fica no centro, não o círculo inteiro */
     transform: translateX(-50%);
 
     display: grid;
 
-    /* place-items: center; é a mesma coisa que colocar:
+    /* *place-items: center; é a mesma coisa que colocar:
         align-items: center; e justify-items: center; */
     place-items: center;
 }
@@ -222,6 +222,8 @@ footer {
     background-color: var(--azul-escuro);
     color: var(--branco);
     padding: 100px 120px 30px;
+
+    margin-top: 80px;
 }
 
 .main {
@@ -298,7 +300,7 @@ footer span {
 
 .botao-menu {
     display: none;
-    /* Esconde o elemento */
+    /* *Esconde o elemento */
     background: transparent;
     border: none;
     cursor: pointer;
@@ -341,7 +343,7 @@ footer span {
         grid-template-columns: repeat(3, 30%);
 
         overflow-x: scroll;
-        /* Permite que o objeto role para o lado */
+        /* *Permite que o objeto role para o lado */
 
         padding: 50px 20px;
 
@@ -412,7 +414,8 @@ footer span {
     }
 
     .botao-menu {
-        display: flex; /* Faz o menu hamburguer aparecer novamente */
+        display: flex;
+        /* *Faz o menu hamburguer aparecer novamente */
     }
 
     .navegacao {
@@ -420,9 +423,9 @@ footer span {
         background-color: var(--azul-escuro);
 
         position: absolute;
-        /* Distancia de 10vh do topo */
+        /* *Distancia de 10vh do topo */
         top: 10vh;
-        /* Encosta na esquerda */
+        /* *Encosta na esquerda */
         left: 0;
 
         width: 100%;
@@ -434,15 +437,16 @@ footer span {
 
         flex-direction: column;
         align-items: flex-end;
-        
+
         gap: 20px;
 
-        z-index: 100; /* Só funciona com position, quanto maior o z-index, mais para cima o elemento fica */
+        z-index: 100;
+        /* *Só funciona com position, quanto maior o z-index, mais para cima o elemento fica */
 
         display: none;
-    }            
+    }
 
-    /* Elemento com duas classes não tem espaço  */
+    /* *Elemento com duas classes não tem espaço  */
     .navegacao .ativo {
         display: flex;
     }
@@ -480,7 +484,7 @@ footer span {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        
+
         z-index: 1;
     }
 
@@ -530,7 +534,7 @@ footer span {
         margin-bottom: 100px;
     }
 
-    .footer-inferior .footer{
+    .footer-inferior .footer {
         display: flex;
         flex-direction: column;
 

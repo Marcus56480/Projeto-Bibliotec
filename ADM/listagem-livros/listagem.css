@@ -9,14 +9,14 @@
 }
 
 .campo-busca {
-    /* Esse elemento pode ocupar o espaço disponivel dentro do container flex. */
+    /* *Esse elemento pode ocupar o espaço disponivel dentro do container flex. */
     flex: 1;
 
     /* 
-    flex: 1 é a mesma coisa que:
-            flex-grow: 1; O elemento pode crescer quando sobra espaço.
-            flex-shrink: 1; O elemento pode encolher quando não existe espaço suficiente.
-            flex-basis: 0%; Fala para diminuir o elemento começar do 0% e junto com os outros, pode crescer ou diminuir
+     *flex: 1 é a mesma coisa que:
+            *flex-grow: 1; O elemento pode crescer quando sobra espaço.
+            *flex-shrink: 1; O elemento pode encolher quando não existe espaço suficiente.
+            *flex-basis: 0%; Fala para diminuir o elemento começar do 0% e junto com os outros, pode crescer ou diminuir
     */
 
     height: 50px;
@@ -43,7 +43,7 @@
     outline: none;
 
     font-family: inherit;
-    /* estamos dizendo para herdar a fonte do pai */
+    /* *estamos dizendo para herdar a fonte do pai */
     font-size: 1.1em;
     color: var(--azul-escuro);
 }
@@ -165,7 +165,7 @@ input[type="checkbox"]:checked {
     border: none;
 }
 
-/* contente e usado com o pseudo-elemento ::after */
+/* *contente e usado com o pseudo-elemento ::after */
 input[type="checkbox"]:checked::after {
 
     content: "✓";
