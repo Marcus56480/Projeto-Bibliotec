@@ -512,7 +512,7 @@ footer span {
 
     /* FOOTER */
 
-    .main {
+    footer .main {
         display: flex;
         flex-direction: column;
 
@@ -534,6 +534,15 @@ footer span {
         margin-bottom: 100px;
     }
 
+    .rodape-informacoes p {
+        font-size: 1.5em;
+    }
+    
+    .nav-footer a,
+    .footer-inferior {
+        font-size: 1.2em;
+    }
+
     .footer-inferior .footer {
         display: flex;
         flex-direction: column;
@@ -550,5 +559,6 @@ footer span {
 
     footer span {
         margin-bottom: 2%;
+        margin: 50px 0 30px;
     }
 }
